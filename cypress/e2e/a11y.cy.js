@@ -1,7 +1,7 @@
 describe("Cypress Simulator - A11y Checks", () => {
   beforeEach(() => {
     cy.login();
-    cy.visit("./src/index.html?skipCaptcha=true?chancesOfError=0", {
+    cy.visit("./src/index.html?skipCaptcha=true&chancesOfError=0", {
       onBeforeLoad(win) {
         win.localStorage.setItem("cookieConsent", "accepted");
       },

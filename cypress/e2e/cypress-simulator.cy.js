@@ -1,7 +1,7 @@
 describe("Cypress Simulator", () => {
   beforeEach(() => {
     cy.login();
-    cy.visit("./src/index.html?skipCaptcha=true?chancesOfError=0", {
+    cy.visit("./src/index.html?skipCaptcha=true&chancesOfError=0", {
       onBeforeLoad(win) {
         win.localStorage.setItem("cookieConsent", "accepted");
       },
@@ -78,4 +78,26 @@ describe("Cipress simulator - Coockies consent", () => {
     cy.get("@cookieConsentBanner").should("not.be.visible");
     cy.window().its("localStorage.cookieConsent").should("eq", "accepted");
   });
+});
+
+describe('Glitch on the matrix', () => {
+   beforeEach(() => {
+    cy.login();
+    cy.visit("./src/index.html?skipCaptcha=true&chancesOfError=1", {
+      onBeforeLoad(win) {
+        win.localStorage.setItem("cookieConsent", "accepted");
+      },
+    });
+  });
+
+  it.only('errors out with a glitch in the Matrix', () => {
+
+    cy.run("cy.visit()")
+
+    cy.get('#outputArea', { timeout: 6000 })
+      .should('contain', "There's a glitch in the Matrix.")
+      .and('be.visible');
+    
+  });
+  
 });
