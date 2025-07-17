@@ -62,7 +62,6 @@ describe("Cypress Simulator", () => {
     cy.contains("button", "Login").should("be.visible");
     cy.get("#cookieConsent").should("not.be.visible");
   });
-
 });
 
 describe("Cipress simulator - Coockies consent", () => {
