@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background-color: #264EC5;
+  background-color: #264ec5;
   color: white;
   text-align: center;
   padding: 30px;
@@ -66,7 +66,7 @@ header {
 }
 
 .dropdown-menu button {
-  background-color: #264EC5;
+  background-color: #264ec5;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -112,7 +112,7 @@ section {
 h2 {
   font-size: 1.6rem;
   margin-bottom: 20px;
-  color: #264EC5;
+  color: #264ec5;
   font-weight: 600;
 }
 
@@ -124,20 +124,20 @@ textarea {
   border: 1px solid #ddd;
   margin-bottom: 20px;
   font-size: 1rem;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   transition: border-color 0.3s ease;
 }
 
 textarea:focus {
   outline: none;
-  border-color: #264EC5;
+  border-color: #264ec5;
 }
 
 button {
   display: block;
   width: 100%;
   padding: 12px;
-  background-color: #264EC5;
+  background-color: #264ec5;
   color: white;
   border: none;
   border-radius: 8px;
@@ -165,13 +165,13 @@ button .spinner {
   width: 20px;
   height: 20px;
   border: 3px solid #fff;
-  border-top: 3px solid #264EC5;
+  border-top: 3px solid #264ec5;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 
 .success {
-  color: #00FF41;
+  color: #00ff41;
 }
 
 .error {
@@ -183,8 +183,12 @@ button .spinner {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 pre {
@@ -193,7 +197,7 @@ pre {
   padding: 15px;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   overflow-x: auto;
   height: 90%;
 }
@@ -282,23 +286,23 @@ pre {
 }
 
 .cy {
-  color: #4EC9B0;
+  color: #4ec9b0;
 }
 
 .dot {
-  color: #D4D4D4;
+  color: #d4d4d4;
 }
 
 .command {
-  color: #DCDCAA;
+  color: #dcdcaa;
 }
 
 .parens {
-  color: #D4D4D4;
+  color: #d4d4d4;
 }
 
 .string {
-  color: #CE9178;
+  color: #ce9178;
 }
 
 .cy-light {
@@ -334,7 +338,7 @@ ul {
 li {
   margin-bottom: 12px;
   font-size: 1rem;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
 
 .code-snippet p pre {
@@ -342,7 +346,7 @@ li {
 }
 
 footer {
-  background-color: #264EC5;
+  background-color: #264ec5;
   color: white;
   text-align: center;
   padding: 25px;
@@ -372,7 +376,7 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: none
+  text-decoration: none;
 }
 
 #login {
@@ -391,7 +395,7 @@ footer a:hover {
 #login h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #264EC5;
+  color: #264ec5;
   font-weight: 600;
   text-align: center;
 }
@@ -399,7 +403,7 @@ footer a:hover {
 #login button {
   width: 100%;
   padding: 15px;
-  background-color: #264EC5;
+  background-color: #264ec5;
   color: white;
   border: none;
   border-radius: 8px;
@@ -425,7 +429,7 @@ nav#menu {
 }
 
 nav#menu button {
-  background-color: #264EC5;
+  background-color: #264ec5;
   color: white;
   border: none;
   border-radius: 8px;
@@ -507,7 +511,7 @@ nav#menu button:hover {
 #captcha h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #264EC5;
+  color: #264ec5;
   font-weight: 600;
   text-align: center;
 }
@@ -538,13 +542,13 @@ nav#menu button:hover {
 
 #captchaInput:focus {
   outline: none;
-  border-color: #264EC5;
+  border-color: #264ec5;
 }
 
 #captcha button {
   width: 100%;
   padding: 12px;
-  background-color: #264EC5;
+  background-color: #264ec5;
   color: white;
   border: none;
   border-radius: 8px;
@@ -559,6 +563,7 @@ nav#menu button:hover {
 }
 
 #captchaError {
+  color: #ab1a0d;
   text-align: center;
   font-size: 0.9rem;
   margin-top: 10px;
