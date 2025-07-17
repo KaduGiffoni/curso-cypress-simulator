@@ -9,7 +9,9 @@ describe("Cypress Simulator - A11y Checks", () => {
 
     cy.injectAxe();
   });
-  it("successfully simulates a Cypress command (e.g., cy.log('Yay!'))", () => {
+
+  Cypress._.times(100, () => {
+      it("successfully simulates a Cypress command (e.g., cy.log('Yay!'))", () => {
     cy.run("cy.log('Yay!')");
 
     cy.get("#outputArea", { timeout: 6000 })
@@ -19,6 +21,9 @@ describe("Cypress Simulator - A11y Checks", () => {
 
     cy.checkA11y(".success");
   });
+  })
+
+
 
   it("shows an error when entering and running an invalid Cypress command (e.g., cy.run())", () => {
     cy.run("cy.run()");
